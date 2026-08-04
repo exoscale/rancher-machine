@@ -18,7 +18,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: rancher/renovate-config/.github/workflows/renovate.yml@release
+    uses: rancher/renovate-config/.github/workflows/renovate.yml@922c8e762a46f551a064c44539923a3216b245be # v1.0.5
     with:
       logLevel: ${{ inputs.logLevel || 'info' }}
       overrideSchedule: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
